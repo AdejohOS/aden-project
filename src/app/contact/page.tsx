@@ -3,15 +3,15 @@ import React from "react";
 import Image from "next/image";
 import { Facebook, Instagram, Mail, PhoneCall, Twitter } from "lucide-react";
 import Link from "next/link";
-import ContactHero from "./_components/contsct-hero";
+import ContactHero from "./_components/contact-hero";
 import { Separator } from "@/components/ui/separator";
-import ContactForm from "./_components/contsct-form";
+import ContactForm from "./_components/contact-form";
 
 const Page = () => {
   return (
-    <div>
+    <section>
       <ContactHero />
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 pb-20">
           <div>
             <h2 className="text-xl font-semibold text-green-500">
@@ -102,7 +102,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

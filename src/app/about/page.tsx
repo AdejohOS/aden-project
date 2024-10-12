@@ -71,7 +71,7 @@ const page = () => {
   return (
     <section>
       <AboutHero />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto pt-8 pb-24 px-4">
         <div className=" grid grid-cols-1  md:grid-cols-2 gap-5">
           <div className="order-2 md:order-1 relative aspect-square bg-green-100/20">
             <Image
@@ -104,56 +104,56 @@ const page = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className=" bg-slate-300/20 pt-24 pb-24">
-          <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="w-full h-full">
-                <div className="mb-5">
-                  <h1 className=" font-bold text-green-600 text-xl">
-                    Core Mandate
-                  </h1>
-                  <p className="mt-2 text-slate-500 text-sm">
-                    The African Digital Education Network’s (ADEN) core mandates
-                    include raising awareness about the benefits of digital
-                    education across Africa and sharing resources with African
-                    institutions of higher education.{" "}
-                  </p>
-                </div>
-                <Accordion type="single" collapsible className="text-slate-500">
-                  {mandates.map((mandate) => (
-                    <div key={mandate.id}>
-                      <AccordionItem value={mandate.title}>
-                        <AccordionTrigger className="font-md ">
-                          <div className="flex items-center">
-                            <CheckCircle className="w-4 h-4 mr-2" />
-                            {mandate.title}
-                          </div>
-                        </AccordionTrigger>
-                        <AccordionContent className="pb-2">
-                          {mandate.description}
-                        </AccordionContent>
-                      </AccordionItem>
-                    </div>
-                  ))}
-                </Accordion>
-              </div>
-
-              <div className="relative aspect-square bg-green-100/20 h-full w-full">
-                <Image
-                  src="/images/about/undraw.svg"
-                  alt="mandate"
-                  fill
-                  className="object-fit px-6"
-                />
-
-                <p className="absolute bottom-5 left-6  text-slate-400 text-xs ">
-                  Acquiring the relevant skill for the right objectives
+      <div className=" bg-slate-200/20 pt-24 pb-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="w-full h-full">
+              <div className="mb-5">
+                <h1 className=" font-bold text-green-600 text-xl">
+                  Core Mandate
+                </h1>
+                <p className="mt-2 text-slate-500 text-sm">
+                  The African Digital Education Network’s (ADEN) core mandates
+                  include raising awareness about the benefits of digital
+                  education across Africa and sharing resources with African
+                  institutions of higher education.{" "}
                 </p>
+              </div>
+              <Accordion type="single" collapsible className="text-slate-500">
+                {mandates.map((mandate) => (
+                  <div key={mandate.id}>
+                    <AccordionItem value={mandate.title}>
+                      <AccordionTrigger className="font-md ">
+                        <div className="flex items-center">
+                          <CheckCircle className="w-4 h-4 mr-2" />
+                          {mandate.title}
+                        </div>
+                      </AccordionTrigger>
+                      <AccordionContent className="pb-2">
+                        {mandate.description}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </div>
+                ))}
+              </Accordion>
+            </div>
 
-                <div className="absolute  right-5 top-[-20px] bg-slate-50 p-2 rounded-full shadow-md">
-                  <KanbanSquare className="h-8 w-8 text-green-500/40" />
-                </div>
+            <div className="relative aspect-square bg-green-100/20 h-full w-full rounded-md">
+              <Image
+                src="/images/about/undraw.svg"
+                alt="mandate"
+                fill
+                className="object-fit px-6"
+              />
+
+              <p className="absolute bottom-5 left-6  text-slate-400 text-xs ">
+                Acquiring the relevant skill for the right objectives
+              </p>
+
+              <div className="absolute  right-5 top-[-20px] bg-slate-50 p-2 rounded-full shadow-md">
+                <KanbanSquare className="h-8 w-8 text-green-500/40" />
               </div>
             </div>
           </div>
