@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="h-screen pt-24 bg-gradient-to-l from-sky-300/20 ...">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
           <div className="space-y-3">
             <h1 className="text-center text-4xl md:text-left md:text-5xl font-bold mb-4 text-slate-700">
               <span className="text-green-700"> Africa&#39;s</span> Growth is
