@@ -1,5 +1,6 @@
+import MobileNavLinks from "./mobile-nav-links";
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 
 const MobileMenu = () => {
@@ -10,7 +11,11 @@ const MobileMenu = () => {
           <Menu className="size-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent>hello</SheetContent>
+      <SheetContent>
+        <SheetClose asChild>
+          <MobileNavLinks />
+        </SheetClose>
+      </SheetContent>
     </Sheet>
   );
 };
