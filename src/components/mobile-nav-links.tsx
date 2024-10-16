@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const links = [
   {
@@ -17,7 +17,7 @@ const links = [
   },
   {
     title: "Events",
-    href: "/event",
+    href: "/events",
   },
   {
     title: "Contact Us",
@@ -26,19 +26,17 @@ const links = [
 ];
 
 const MobileNavLinks = ({ ...restProps }) => {
-  const router = useRouter();
-
   return (
     <div className="mt-8 w-full space-y-4">
       {links.map((link) => (
-        <button
+        <Link
           key={link.href}
-          onClick={() => router.push(link.href)}
+          href={link.href}
           {...restProps}
-          className="w-full bg-gray-50 hover:bg-gray-100  drop-shadow-sm px-2 py-2 rounded-md font-semibold"
+          className="w-full flex flex-col text-center bg-gray-50 hover:bg-gray-100  drop-shadow-sm px-2 py-2 rounded-md font-semibold"
         >
           {link.title}
-        </button>
+        </Link>
       ))}
     </div>
   );
