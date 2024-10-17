@@ -52,7 +52,7 @@ const Newsletter = () => {
           )}
         />
 
-        <Button>Submit</Button>
+        <Button variant="theme">Submit</Button>
       </form>
     </Form>
   );
