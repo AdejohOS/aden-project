@@ -7,12 +7,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 md:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-5">
           <div className="space-y-3">
-            <h1 className="text-center text-4xl md:text-left md:text-6xl font-extrabold mb-4 text-slate-700">
+            <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-700">
               <span className="text-green-700"> Africa&#39;s</span> Growth is
               our{" "}
               <span className="border-b border-green-200">responsibility!</span>
             </h1>
-            <p className="text-center md:text-left mb-4 text-slate-500 max-w-[500px]">
+            <p className="justify-end text-center w-full md:text-left mb-4 text-slate-500 ">
               Digital education has the potential to overcome some of the
               traditional barriers to education in Africa, such as the lack of
               physical infrastructure and the shortage of qualified teachers.
