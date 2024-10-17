@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 const Hero = () => {
   return (
-    <section className="custom-height mt-16 bg-gradient-to-l flex items-center justify-center from-sky-300/20 ...">
-      <div className="container mx-auto px-4">
+    <section className="md:h-[calc(100vh-4rem)] mt-16 bg-gradient-to-l flex items-center justify-center from-sky-300/20 ...">
+      <div className="container mx-auto px-4 py-20 md:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-5">
           <div className="space-y-3">
             <h1 className="text-center text-4xl md:text-left md:text-5xl font-bold mb-4 text-slate-700">
