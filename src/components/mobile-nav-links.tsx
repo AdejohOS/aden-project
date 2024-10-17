@@ -33,7 +33,7 @@ const MobileNavLinks = ({ ...restProps }) => {
           key={link.href}
           href={link.href}
           {...restProps}
-          className="w-full flex flex-col text-center bg-gray-50 hover:bg-gray-100  drop-shadow-sm px-2 py-2 rounded-md font-semibold"
+          className="w-full flex flex-col text-center bg-green-50 hover:bg-green-100  drop-shadow-sm px-2 py-2 rounded-md font-semibold"
         >
           {link.title}
         </Link>
