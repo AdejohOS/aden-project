@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="space-y-3">
             <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-700">
               <span className="text-green-700"> Africa&#39;s</span> Growth is
-              our{" "}
+              Our{" "}
               <span className="border-b border-green-200 text-green-700">
                 Responsibility!
               </span>
