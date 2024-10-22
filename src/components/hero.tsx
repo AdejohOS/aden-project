@@ -35,11 +35,11 @@ const Hero = () => {
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/images/hero.png"
+              src="/images/Picture2.png"
               alt=""
               width={700}
               height={300}
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
         </div>
