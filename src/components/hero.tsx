@@ -10,7 +10,9 @@ const Hero = () => {
             <h1 className="text-center text-4xl md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-700">
               <span className="text-green-700"> Africa&#39;s</span> Growth is
               our{" "}
-              <span className="border-b border-green-200">responsibility!</span>
+              <span className="border-b border-green-200 text-green-700">
+                Responsibility!
+              </span>
             </h1>
             <p className="justify-end text-center w-full md:text-left mb-4 text-slate-500 ">
               Digital education has the potential to overcome some of the
