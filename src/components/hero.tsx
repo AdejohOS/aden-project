@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 md:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-5">
           <div className="space-y-3">
-            <h1 className="text-center text-5xl md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-700">
+            <h1 className="text-center text-[42px] md:text-left md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-700">
               <span className="text-green-700"> Africa&#39;s</span> Growth is
               Our{" "}
               <span className="border-b border-green-200 text-green-700">
