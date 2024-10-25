@@ -12,7 +12,11 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Africa Digital Education Network (ADEN)",
+  title: {
+    template: " %s |  Africa Digital Education Network (ADEN)",
+    absolute: "Aden | Africa Digital Education Network (ADEN)",
+  },
+
   description:
     "The African Digital Education Network's core mandates include raising awareness about the benefits of digital education across Africa and sharing resources with African institutions of higher education",
 };

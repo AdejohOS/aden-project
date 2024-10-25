@@ -7,6 +7,12 @@ import ContactHero from "./_components/contact-hero";
 import { Separator } from "@/components/ui/separator";
 import ContactForm from "./_components/contact-form";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+};
+
 const Page = () => {
   return (
     <section>

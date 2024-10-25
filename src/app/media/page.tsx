@@ -8,6 +8,11 @@ import { Input } from "@/components/ui/input";
 import Slider from "./_components/slider";
 import { heros } from "@/lib/hero";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Media",
+};
 const Media = () => {
   return (
     <section>

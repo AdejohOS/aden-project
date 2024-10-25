@@ -9,6 +9,12 @@ import UpcomingHero from "./_components/upcoming-hero";
 import CategoryFilter from "./_components/category-filter";
 import Search from "./_components/search";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Events",
+};
+
 const Events = () => {
   return (
     <section>
